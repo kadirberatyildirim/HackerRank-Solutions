@@ -45,3 +45,17 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+
+
+
+"""
+#Or recursively:
+
+def superDigit(n, k):
+    # Write your code here
+    if len(str(n) * k) == 1:
+        return n
+    else:
+        num = int( str(n) * k )
+        return superDigit(sum([int(i) for i in list(str(num))]), 1)
+"""
